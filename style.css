@@ -1,5 +1,54 @@
-*{
-    background-image: url('./assets/backgroundimage.jpg');
-    background-size: cover;
+*
+{
+    margin: 0;
+    padding: ;
+    box-sizing: border-box;    
+}
 
+body
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(24, 103, 214, 0.786), rgba(7, 176, 214, 0.8), rgba(24, 103, 214, 0.786), rgba(7, 176, 214, 0.8));
+}
+nav
+{
+    border: 2px solid rgba(255, 255, 255, 0.307);
+    height: 75px;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center ;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.205);
+    position: relative;
+}
+#anchor
+{
+    color: white;
+    text-decoration: none;
+}
+section
+{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#profile-img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
 }
