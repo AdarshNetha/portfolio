@@ -29,12 +29,12 @@ nav
     margin-right: 10%;
     margin-bottom: 30px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.205);
+    background-color: rgba(255, 255, 255, 0.978);
     position: fixed;
 }
 nav>a
 {
-    color: white;
+    color: rgb(0, 208, 255);
     text-decoration: none;
 
 }
@@ -78,3 +78,5 @@ div>section>p
     margin-bottom: 10px;
     
 }
+
+
