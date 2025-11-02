@@ -79,4 +79,16 @@ div>section>p
     
 }
 
-
+div>section>main{
+    display: grid;
+    grid-template-columns:50px 220px 50px 220px;   
+    grid-template-rows: repeat(7, 50px);      
+    gap: 10px;                               
+    width: 100%;
+}
+div>section>main>div
+{
+   
+    text-align: center;
+    font-size: 150px !important;
+}
