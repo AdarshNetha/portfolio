@@ -112,3 +112,28 @@ h3{
     grid-template-rows: auto;
 
 }
+#cltms
+{
+    color: azure;
+}
+#cltms:hover
+{
+    color: lightcyan;
+}
+
+.contact-info
+{
+    font-size: 25px;
+    margin-bottom: 10px;   
+}
+.contact-btn
+{
+    color: white;
+}
+.contact-btn:hover
+{
+    text-decoration: underline;
+    color: paleturquoise;
+}
+
+
