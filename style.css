@@ -71,10 +71,7 @@ h2{
     font-size: 40px;
     margin-bottom: 10px;
 } 
-div>section>h2
-{   
-    
-}
+
 div>section>p
 {
     font-size: 25px;
@@ -85,7 +82,7 @@ div>section>p
 div>section>main{
     display: grid;
     grid-template-columns:5% 40% 5% 40%;   
-    grid-template-rows: repeat(7, 50px);      
+    grid-template-rows: repeat(8, 50px);      
     gap: 15px;                               
     width: 100%;
 }
@@ -137,3 +134,78 @@ h3{
 }
 
 
+/* ===============================
+   Mobile Devices (max-width: 768px)
+   =============================== */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+        height: auto;
+        flex-wrap: wrap;
+        font-size: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    nav a {
+        margin: 5px 10px;
+    }
+
+    /* Hero section */
+    section {
+        margin-left: 0;
+        margin-top: 150px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section div h1 {
+        font-size: 22px;
+    }
+
+    #profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Sections spacing */
+    div > section {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    div > section > p {
+        font-size: 18px;
+    }
+
+    /* Skills grid becomes 2 columns */
+    div > section > main {
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .skill {
+        font-size: 18px;
+    }
+
+    /* Headings */
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    /* Contact section */
+    .contact-info {
+        font-size: 18px;
+    }
+}
