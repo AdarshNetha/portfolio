@@ -72,7 +72,7 @@ h2{
     margin-bottom: 10px;
 } 
 
-div>section>p
+div>section>p,li,i
 {
     font-size: 25px;
     margin-bottom: 10px;
@@ -101,6 +101,10 @@ div>section>main
 }
 h3{
     font-size: 30px;
+    margin-bottom: 10px;
+}
+h4{
+    font-size: 25px;
     margin-bottom: 10px;
 }
 #head{
@@ -134,12 +138,9 @@ h3{
 }
 
 
-/* ===============================
-   Mobile Devices (max-width: 768px)
-   =============================== */
 @media (max-width: 768px) {
 
-    /* Navigation */
+   
     nav {
         width: 100%;
         margin: 0;
@@ -156,7 +157,7 @@ h3{
         margin: 5px 10px;
     }
 
-    /* Hero section */
+   
     section {
         margin-left: 0;
         margin-top: 150px;
@@ -174,7 +175,7 @@ h3{
         height: 180px;
     }
 
-    /* Sections spacing */
+    
     div > section {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -184,7 +185,7 @@ h3{
         font-size: 18px;
     }
 
-    /* Skills grid becomes 2 columns */
+    
     div > section > main {
         grid-template-columns: 20% 80%;
         grid-template-rows: auto;
@@ -195,7 +196,7 @@ h3{
         font-size: 18px;
     }
 
-    /* Headings */
+   
     h2 {
         font-size: 28px;
     }
@@ -204,7 +205,7 @@ h3{
         font-size: 22px;
     }
 
-    /* Contact section */
+   
     .contact-info {
         font-size: 18px;
     }
