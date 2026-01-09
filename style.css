@@ -1,202 +1,230 @@
-*
-{
+/* RESET */
+* {
     margin: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
-body
-{
+/* BODY */
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
-    background: linear-gradient(to right, rgba(24, 103, 214, 0.786), rgba(7, 176, 214, 0.8), rgba(24, 103, 214, 0.786), rgba(7, 176, 214, 0.8));
+    background: linear-gradient(
+        to right,
+        rgba(24, 103, 214, 0.786),
+        rgba(7, 176, 214, 0.8),
+        rgba(24, 103, 214, 0.786),
+        rgba(7, 176, 214, 0.8)
+    );
 }
-nav
-{
+
+/* NAVBAR */
+nav {
     border: 2px solid rgba(255, 255, 255, 0.307);
     height: 10vh;
     width: 80vw;
     padding: 10px;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
     display: flex;
-    justify-content:space-evenly;
-    align-items:center ;
-    flex-wrap: nowrap;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto 30px auto;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.978);
     position: fixed;
+    top: 10px;
+    left: 10%;
+    z-index: 1000;
 }
-nav>a
-{
+
+nav a {
     color: rgb(0, 208, 255);
     text-decoration: none;
-
+    font-size: 24px;
 }
-nav>a:hover
-{
+
+nav a:hover {
     text-decoration: underline;
     color: paleturquoise;
 }
-section
-{   margin-top: 80px;
+
+/* SECTIONS */
+section {
+    margin-top: 120px;
     color: white;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
-#profile-img
-{
+
+/* HOME */
+#home {
+    min-height: 80vh;
+}
+
+#home div {
+    max-width: 500px;
+}
+
+#home h1 {
+    font-size: 36px;
+}
+
+#home h2 {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+/* PROFILE IMAGE */
+#profile-img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* CONTENT SECTIONS */
+section:not(#home) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+/* HEADINGS */
+h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 30px;
     margin-top: 20px;
 }
-div>section
-{
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-evenly;
-    margin-left: 20vb;
-    margin-right: 20vb;
-}
-h2{
-    font-size: 40px;
-    margin-bottom: 10px;
-} 
 
-div>section>p,li,i
-{
+h4 {
     font-size: 25px;
-    margin-bottom: 10px;
-    
+    margin-top: 15px;
 }
 
-div>section>main{
-    display: grid;
-    grid-template-columns:5% 40% 5% 40%;   
-    grid-template-rows: repeat(8, 50px);      
-    gap: 15px;                               
-    width: 100%;
-}
-div>section>main>div
-{
-    text-align: center;
-    font-size: 150px !important;
-}
-div>section>main
-{
-    margin-top: 10px;
-}
-.skill
-{
-    font-size:25px;
-}
-h3{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-h4{
+/* TEXT */
+p,
+li {
     font-size: 25px;
     margin-bottom: 10px;
 }
-#head{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
 
+ul {
+    margin-left: 30px;
 }
-.cltms
-{
+
+/* LINKS */
+a {
     color: azure;
 }
-#cltms:hover
-{
+
+a:hover {
     color: lightcyan;
-}
-
-.contact-info
-{
-    font-size: 25px;
-    margin-bottom: 10px;   
-}
-.contact-btn
-{
-    color: white;
-}
-.contact-btn:hover
-{
     text-decoration: underline;
-    color: paleturquoise;
 }
 
+/* CONTACT */
+#contact p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* HR */
+hr {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 30px 0;
+}
+
+/* ===================== */
+/* RESUME STYLE SKILLS */
+/* ===================== */
+
+.skills-wrapper {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.skill-title {
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.skill-desc {
+    width: 70%;
+    font-size: 25px;
+}
+
+/* ===================== */
+/* MOBILE RESPONSIVE */
+/* ===================== */
 
 @media (max-width: 768px) {
 
-   
+    body {
+        padding: 10px;
+    }
+
     nav {
         width: 100%;
-        margin: 0;
-        padding: 8px;
+        left: 0;
         height: auto;
         flex-wrap: wrap;
-        font-size: 20px;
-        position: fixed;
+        font-size: 18px;
+        border-radius: 0;
         top: 0;
-        left: 0;
     }
 
     nav a {
         margin: 5px 10px;
+        font-size: 18px;
     }
 
-   
     section {
-        margin-left: 0;
-        margin-top: 150px;
+        margin-top: 140px;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    section div h1 {
-        font-size: 22px;
+    section:not(#home) {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        align-items: center;
+    }
+
+    #home h1 {
+        font-size: 24px;
+    }
+
+    #home h2 {
+        font-size: 18px;
     }
 
     #profile-img {
         width: 180px;
         height: 180px;
+        margin-top: 20px;
     }
 
-    
-    div > section {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-
-    div > section > p {
+    p,
+    li {
         font-size: 18px;
     }
 
-    
-    div > section > main {
-        grid-template-columns: 20% 80%;
-        grid-template-rows: auto;
-        gap: 10px;
-    }
-
-    .skill {
-        font-size: 18px;
-    }
-
-   
     h2 {
         font-size: 28px;
     }
@@ -205,8 +233,28 @@ h4{
         font-size: 22px;
     }
 
-   
-    .contact-info {
+    h4 {
+        font-size: 20px;
+    }
+
+    /* SKILLS MOBILE */
+    .skill-row {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .skill-title {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .skill-desc {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #contact p {
         font-size: 18px;
     }
 }
